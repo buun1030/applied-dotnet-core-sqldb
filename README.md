@@ -1,5 +1,4 @@
-# applied-dotnet-core-sqldb
-Apply ASP.NET Core with SQL DB tutorial by myself from azure docs
+# Deploy an ASP.NET Core and Azure SQL Database app to Azure App Service
 
 ## 1 - Set up the simple application
 ```console
@@ -11,13 +10,11 @@ cd msdocs-app-service-sqldb-dotnetcore
 ```console
 az login
 ```
-
 Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present.
 ```console
 az webapp up --name <app-name> --runtime "DOTNET|6.0" --os-type linux --sku F1 --plan <plan-name> --resource-group <rg-name> --location centralus
 ```
 These commands include az group create, az appservice plan create, and az webapp create.
-
 ```console
 You can launch the app at http://<app-name>.azurewebsites.net
 ```
