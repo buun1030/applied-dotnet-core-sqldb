@@ -11,13 +11,27 @@ cd msdocs-app-service-sqldb-dotnetcore
 ```console
 az login
 ```
+
 Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present.
 ```console
 az webapp up --name <app-name> --runtime "DOTNET|6.0" --os-type linux --sku F1 --plan <plan-name> --resource-group <rg-name> --location centralus
 ```
-These commands include az group create, az appservice plan create, and az webapp create. Then
+These commands include az group create, az appservice plan create, and az webapp create.
+
 ```console
 You can launch the app at http://<app-name>.azurewebsites.net
+```
+
+## 3 - Create the database
+```console
+```
+
+## 4 - Connect the App to the Database
+```console
+```
+
+## 5 - Generate the Database Schema
+```console
 ```
 
 ## (Optional) Update the app and redeploy
@@ -38,13 +52,3 @@ This command uses values that are cached locally in the .azure/config file, incl
 ```console
 az group delete --name <rg-name>
 ```
-
-## 3 - Create the database
-```console
-```
-
-## 4 - Connect the App to the Database
-```console
-```
-
-## 5 - Generate the Database Schema
