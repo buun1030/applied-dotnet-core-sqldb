@@ -15,7 +15,7 @@ Create a webapp and deploy code from a local workspace to the app. The command i
 az webapp up --name <app-name> --runtime "DOTNET|6.0" --os-type linux --sku F1 --plan <plan-name> --resource-group <rg-name> --location centralus
 ```
 These commands include az group create, az appservice plan create, and az webapp create.
-```console
+```
 You can launch the app at http://<app-name>.azurewebsites.net
 ```
 
