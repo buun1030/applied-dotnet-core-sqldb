@@ -1,4 +1,4 @@
-# Deploy an ASP.NET Core and Azure SQL Database app to Azure App Service
+# Deploy an ASP.NET Core and SQL Database app to App Service
 
 ## 1 - Set up the simple application
 ```console
